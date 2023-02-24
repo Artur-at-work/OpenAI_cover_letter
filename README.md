@@ -36,3 +36,8 @@ Date: Fri, 24 Feb 2023 03:41:04 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 ```
+
+Adding OpenAI API key in root directory
+```
+echo "OPENAI_API_KEY=$MY_GENERATED_API_KEY" > .env
+```
