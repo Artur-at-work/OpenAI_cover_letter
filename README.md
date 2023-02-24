@@ -1,9 +1,11 @@
 # OpenAI_cover_letter
-Inspired by Buildspace's idea on providing UI to generate task specific request to OpenAI API
+Input the job description into textarea and press Generate. <br>
+Backend combines the prompt, sends to OpenAI API and prints the output below. <br>
+Inspired by Buildspace's project on providing UI to generate task specific requests to GPT3
 
-Pre-requesites:
-# Installing yarn and react on Ubuntu 20
-`
+# Installation
+- Installing pre-requisuites on Ubuntu 20
+```
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
@@ -18,10 +20,10 @@ sudo apt install --no-install-recommends yarn
 yarn add next react react-dom
 
 npm install openai
-`
+```
 
 Starting dev environment:
-`
+```
 $ yarn dev
 
 $ curl -I http://localhost:3000
@@ -33,4 +35,4 @@ Vary: Accept-Encoding
 Date: Fri, 24 Feb 2023 03:41:04 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
-`
+```
